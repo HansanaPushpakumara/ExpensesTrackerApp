@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:background="@color/screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Expenses"
+                android:textAlignment="center"
+                android:textColor="@color/mblack"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/grandTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/themeMain1"
+                android:textSize="24sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <ListView
+                android:layout_margin="5dp"
+                android:id="@+id/expenses_list"
+                android:layout_width="fill_parent"
+                android:divider="@color/screen"
+                android:layout_height="wrap_content"
+                android:dividerHeight="10dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/emptyTxts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginVertical="30dp"
+            android:text="No Expenses Added"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Add New Expense"
+            android:paddingHorizontal="25dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttonarea"
+            android:layout_gravity="center" />
+
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/statButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Statistics"
+                android:layout_marginTop="30dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonarea"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout> -->
+
+
+    </LinearLayout>
+   <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addCatBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="30dp"
+        app:backgroundTint="@color/themeMain"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:tint="@android:color/white"/>
+-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
